@@ -1,0 +1,139 @@
+name: Research Contribution
+description: Share research findings, validation studies, or datasets
+title: "[Research]: "
+labels: ["research", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your research! This template is for validation studies, benchmarks, datasets, or research findings related to building energy simulation.
+
+  - type: dropdown
+    id: contribution-type
+    attributes:
+      label: Contribution Type
+      description: What type of research contribution is this?
+      options:
+        - Validation Study
+        - Benchmark Dataset
+        - Case Study
+        - Methodology/Algorithm
+        - Literature Review/Analysis
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Research Summary
+      description: Brief summary of your research contribution
+      placeholder: Provide a concise summary of your research...
+    validations:
+      required: true
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology
+      description: Describe your research methodology
+      placeholder: |
+        - Data sources
+        - Simulation approach
+        - Validation methods
+        - Statistical analysis
+    validations:
+      required: true
+
+  - type: textarea
+    id: results
+    attributes:
+      label: Key Findings/Results
+      description: What are the main results or findings?
+      placeholder: Summarize key results and their significance...
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-availability
+    attributes:
+      label: Data and Code Availability
+      description: Where can others access your data, code, or models?
+      placeholder: |
+        - Data repository link
+        - Code repository link
+        - License information
+        - Any access restrictions
+
+  - type: textarea
+    id: building-info
+    attributes:
+      label: Building/System Information
+      description: Details about buildings or systems studied
+      placeholder: |
+        - Building type(s)
+        - Climate zone(s)
+        - Energy systems
+        - Design characteristics
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Relevant publications, standards, or documentation
+      placeholder: |
+        - Published paper DOI/link
+        - Related standards (ASHRAE, ISO, etc.)
+        - Previous work
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: Can others reproduce your results?
+      options:
+        - Fully reproducible - All data and code available
+        - Partially reproducible - Some data/code available
+        - Not reproducible - Proprietary data or methods
+        - Working on making it reproducible
+    validations:
+      required: true
+
+  - type: textarea
+    id: integration
+    attributes:
+      label: Integration with Ecosystem
+      description: How could this be integrated into the openBES-ecosystem?
+      placeholder: |
+        - Suggested repository
+        - Implementation ideas
+        - Dependencies or requirements
+
+  - type: checkboxes
+    id: open-science
+    attributes:
+      label: Open Science Principles
+      description: Please confirm alignment with open research practices
+      options:
+        - label: Data is openly licensed (or I'm working toward that)
+        - label: Methods are clearly documented
+        - label: Results are transparent and reproducible (or I'm working toward that)
+
+  - type: textarea
+    id: collaboration
+    attributes:
+      label: Collaboration Opportunities
+      description: Are you interested in collaborating on this research?
+      placeholder: Describe how others could contribute or collaborate...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have reviewed the Contributing guidelines
+          required: true
+        - label: I have provided sufficient methodological detail
+          required: true
+        - label: I have included references to relevant publications or standards
+          required: false
