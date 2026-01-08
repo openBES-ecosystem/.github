@@ -1,4 +1,4 @@
-### Welcome to the openBES ecosystem
+## Welcome to the openBES ecosystem
 
 **openBES-ecosystem** is an open research ecosystem for **early-stage building energy simulation**, supporting transparent, flexible, and reproducible analysis of building energy performance.
 
