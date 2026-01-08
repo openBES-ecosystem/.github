@@ -1,0 +1,125 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for building energy simulation
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! Help us understand your needs and use case.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: Describe the problem you're trying to solve or the use case you want to address
+      placeholder: What challenge or need does this feature address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution or feature
+      placeholder: How would you solve this problem?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered alternative solutions or workarounds?
+      placeholder: Describe alternatives you've considered...
+
+  - type: dropdown
+    id: building-context
+    attributes:
+      label: Building Type Context
+      description: What type of building simulation does this relate to?
+      options:
+        - Residential
+        - Commercial
+        - Industrial
+        - Mixed-use
+        - Multiple/All types
+        - Not building-specific
+    validations:
+      required: true
+
+  - type: dropdown
+    id: design-phase
+    attributes:
+      label: Design Phase
+      description: Which design phase is this feature most relevant to?
+      options:
+        - Conceptual/Pre-design
+        - Schematic Design
+        - Design Development
+        - Multiple phases
+        - Not phase-specific
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: How would this feature benefit the research community or practitioners?
+      placeholder: |
+        - Improved accuracy
+        - Faster workflows
+        - Better net-zero assessment
+        - Enhanced usability
+      value: |
+        - 
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or References
+      description: Provide examples, mockups, or references to similar features
+      placeholder: Links to papers, tools, or other implementations...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (Your Perspective)
+      description: How important is this feature to your work?
+      options:
+        - Critical - Blocking my research/work
+        - High - Would significantly improve workflow
+        - Medium - Nice to have
+        - Low - Minor enhancement
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: If you have technical ideas for implementation, share them here
+      placeholder: Optional technical details or suggestions...
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be willing to contribute to this feature?
+      options:
+        - label: I would be willing to implement this feature
+        - label: I would be willing to test this feature
+        - label: I would be willing to provide validation data/case studies
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided sufficient detail about the use case
+          required: true
+        - label: This feature aligns with the ecosystem's focus on early-stage simulation and net-zero/low-carbon buildings
+          required: true

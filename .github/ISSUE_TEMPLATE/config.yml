@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 General Discussion
+    url: https://github.com/orgs/openBES-ecosystem/discussions
+    about: Ask questions, share ideas, or discuss building energy simulation topics
+  - name: 📚 Documentation
+    url: https://github.com/openBES-ecosystem
+    about: Browse repositories and documentation
+  - name: 🔒 Security Issue
+    url: https://github.com/openBES-ecosystem/.github/blob/main/SECURITY.md
+    about: Report security vulnerabilities privately (see Security Policy)
